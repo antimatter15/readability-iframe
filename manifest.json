@@ -1,0 +1,20 @@
+{
+  "name" : "Readability API",
+  "version" : "1.0",
+  "description" : "Create sites that embed iframes with Readability.",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js" : ["read.js"],
+      "all_frames" : true
+    }
+  ],
+  "icons" : {
+    "48" : "48.png",
+    "128" : "128.png"
+  }
+}
+
