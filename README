@@ -25,7 +25,12 @@ Easy enough right? That's it.
 
 
 
-readTools:
+readTools: 
+  Example: http://qfox.nl/weblog/211#readStyle=style-ebook&readSize=size-small&readMargin=margin-large&readTools=Instapaper%3D%3Dhttp%3A%2F%2Fwww.instapaper.com%2Ffavicon.ico
+
+
+Instapaper extension
+
 
 var obj = {
   'Instapaper': {
