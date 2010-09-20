@@ -132,16 +132,18 @@ var readability = {
 
 		if(window.readTools){
 		  window.readTools.split(';').forEach(function(item){
-        var parts = item.split(':');
+        var parts = item.split('=');
         var title = parts[0], bgim = parts[1];
         var a = document.createElement('a');
+        a.id = "print-page";
         if(title.indexOf('http') != -1){
           a.href = title;
           a.setAttribute('target','_blank');
         }else{
           a.href = '#';
-          a.onclick = 'window.parent.postMessage("'+escape(title)+'");return false';
+          a.setAttribute('onclick', 'window.parent.postMessage("'+escape(title)+'");return false');
         }
+        a.style.backgroundImage = 'url('+bgim+')';
         a.title = title;
         articleTools.appendChild(a);
       });
