@@ -93,7 +93,7 @@ span.version {
 }
 
 #kindle-page{
-    background: url(../images/read-kindle.png) no-repeat left top;
+    background: url(http://lab.arc90.com/experiments/readability/images/read-kindle.png) no-repeat left top;
 }
 #email-page{
     background: url(http://lab.arc90.com/experiments/readability/images/read-email.png) no-repeat left top;
