@@ -1,6 +1,6 @@
 {
   "name" : "Readability API",
-  "version" : "1.0",
+  "version" : "1.5",
   "description" : "Create sites that embed iframes with Readability.",
   "content_scripts" : [
     {
