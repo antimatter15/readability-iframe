@@ -130,6 +130,23 @@ var readability = {
 			<a href='#' onclick='readability.kindleBox(); return false;' title='Send to Amazon Kindle' id='kindle-page'>Send to Kindle</a>\
 		";
 
+		if(window.readTools){
+		  window.readTools.split(';').forEach(function(item){
+        var parts = item.split(':');
+        var title = parts[0], bgim = parts[1];
+        var a = document.createElement('a');
+        if(title.indexOf('http') != -1){
+          a.href = title;
+          a.setAttribute('target','_blank');
+        }else{
+          a.href = '#';
+          a.onclick = 'window.parent.postMessage("'+escape(title)+'");return false';
+        }
+        a.title = title;
+        articleTools.appendChild(a);
+      });
+		}
+
 		return articleTools;
 	},
 	
@@ -156,13 +173,7 @@ var readability = {
 
 		articleFooter.id = "readFooter";
 		articleFooter.innerHTML = "\
-			<a href='http://lab.arc90.com/experiments/readability'><img src='http://lab.arc90.com/experiments/readability/images/footer-readability.png'></a>\
-			<a href='http://www.arc90.com'><img src='http://lab.arc90.com/experiments/readability/images/footer-arc90.png'></a>\
-			<a href='http://www.twitter.com/arc90' class='footer-twitterLink'>Follow us on Twitter &raquo;</a>\
-	                <div class='footer-right' >\
-	                        <span class='version'>Readability version " + readability.version + "</span>\
-					</div>\
-		";
+			<a href='http://lab.arc90.com/experiments/readability'><img src='http://lab.arc90.com/experiments/readability/images/footer-readability.png'></a>";
 
 		return articleFooter;
 	},
