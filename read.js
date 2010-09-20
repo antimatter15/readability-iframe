@@ -19,3 +19,7 @@ if(location.hash.indexOf('read') != -1){
     document.documentElement.insertBefore(script);
   }
 }
+
+http://qfox.nl/weblog/211#readStyle=style-ebook&readSize=size-small&readMargin=margin-large&readTools=
+
+

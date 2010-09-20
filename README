@@ -22,3 +22,26 @@ Specifically, the options are (for now):
   
   
 Easy enough right? That's it.
+
+
+
+readTools:
+
+var obj = {
+  'Instapaper': {
+    icon: 'http://www.instapaper.com/favicon.ico',
+    callback: function(){
+      
+    }
+  }
+};
+
+window.onmessage = function(e){
+  
+}
+
+for(var i in obj){
+  
+}
+
+encodeURIComponent(
