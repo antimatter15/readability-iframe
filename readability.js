@@ -141,7 +141,7 @@ var readability = {
           a.setAttribute('target','_blank');
         }else{
           a.href = '#';
-          a.setAttribute('onclick', 'window.parent.postMessage("READREAD'+escape(title)+'");return false');
+          a.setAttribute('onclick', 'window.parent.postMessage("READREAD'+escape(title)+'","*");return false');
         }
         a.style.backgroundImage = 'url('+bgim+')';
         a.title = title;
