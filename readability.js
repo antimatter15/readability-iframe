@@ -82,7 +82,7 @@ var readability = {
 			}
 			else
 			{
-				articleContent.innerHTML = "<p>Sorry, readability was unable to parse this page for content. If you feel like it should have been able to, please <a href='http://code.google.com/p/arc90labs-readability/issues/entry'>let us know by submitting an issue.</a></p>";
+				window.location.reload(true);
 			}
 		}
 
