@@ -26,7 +26,7 @@ Easy enough right? That's it.
 
 
 readTools: 
-  Example: http://qfox.nl/weblog/211#readStyle=style-ebook&readSize=size-small&readMargin=margin-large&readTools=Instapaper%3D%3Dhttp%3A%2F%2Fwww.instapaper.com%2Ffavicon.ico
+  Example: http://qfox.nl/weblog/211#readStyle=style-ebook&readSize=size-small&readMargin=margin-large&readTools=Instapaper%3D%3Dhttp%3A%2F%2Fantimatter15.github.com%2Freadability-iframe%2Finstapaper.png
 
 
 Instapaper extension
@@ -34,7 +34,7 @@ Instapaper extension
 
 var obj = {
   'Instapaper': {
-    icon: 'http://www.instapaper.com/favicon.ico',
+    icon: 'http://antimatter15.github.com/readability-iframe/instapaper.png',
     callback: function(url){
       var j = document.createElement('script');
       if(localStorage.Instapaper_user){
