@@ -132,7 +132,7 @@ var readability = {
 
 		if(window.readTools){
 		  window.readTools.split(';').forEach(function(item){
-        var parts = item.split('=');
+        var parts = item.split('==');
         var title = parts[0], bgim = parts[1];
         var a = document.createElement('a');
         a.id = "print-page";
